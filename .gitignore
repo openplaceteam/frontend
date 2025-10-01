@@ -1,0 +1,7 @@
+.DS_Store
+.env
+.eslintcache
+.pnpm-store/
+*.db
+*.log
+node_modules/

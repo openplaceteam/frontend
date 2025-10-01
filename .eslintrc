@@ -1,0 +1,11 @@
+{
+	"extends": "chariz",
+	"settings": {
+		"react": {
+			"version": "19"
+		}
+	},
+	"rules": {
+		"unicorn/switch-case-braces": ["error", "avoid"]
+	}
+}
