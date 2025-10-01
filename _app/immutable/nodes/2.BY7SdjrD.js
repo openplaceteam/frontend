@@ -45717,7 +45717,7 @@ function nL(b, l) {
     const _ = 10 ** l;
     return Math.round(b * _) / _
 }
-var aL = Ie('<meta property="og:title" content="Bplace - A massive real-time pixel art canvas on the world map!"/> <meta name="twitter:title" content="Bplace - A massive real-time pixel art canvas on the world map!"/> <meta name="robots" content="index, follow, max-image-preview:large"/> <meta name="color-scheme" content="light only"/>', 1),
+var aL = Ie('<meta property="og:title" content="openplace - A massive real-time pixel art canvas on the world map!"/> <meta name="twitter:title" content="openplace - A massive real-time pixel art canvas on the world map!"/> <meta name="robots" content="index, follow, max-image-preview:large"/> <meta name="color-scheme" content="light only"/>', 1),
     sL = (b, l) => {
         oe(l, !x(l))
     },
@@ -46175,7 +46175,7 @@ function gD(b, l) {
     var Ar = VL();
     Vy(gt => {
         var qt = aL();
-        qy.title = "Bplace - Paint the world", fi(6), H(gt, qt)
+        qy.title = "openplace - Paint the world", fi(6), H(gt, qt)
     });
     var kr = zt(Ar);
     {
