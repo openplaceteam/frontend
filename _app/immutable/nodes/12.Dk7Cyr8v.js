@@ -269,7 +269,7 @@ function Oi(u, o) {
     function Aa() {
         const n = Number(e(ht));
         if (!Number.isFinite(n) || n === 0) {
-            oe.error("Informe um número diferente de 0");
+            oe.error("Enter a number other than zero");
             return;
         }
         zr(n), _(ht, "");
@@ -318,7 +318,7 @@ function Oi(u, o) {
                     H = await ge.getUserTickets({ userId: e(l).id, kind: n, page: g, pageSize: Lr });
                 _(De, g === 0 ? H : [...e(De), ...H], !0), !e(Te) && e(De).length > 0 && _(Te, e(De)[0], !0), Je.add(n);
             } catch (g) {
-                console.error("Erro ao carregar mini moderation", n, g), oe.error((g == null ? void 0 : g.message) ?? "Falha ao carregar tickets");
+                console.error("Error loading mini moderation", n, g), oe.error((g == null ? void 0 : g.message) ?? "Falha ao carregar tickets");
             } finally {
                 _(Me, !1);
             }
@@ -344,7 +344,7 @@ function Oi(u, o) {
                     !0
                 );
             } catch (b) {
-                console.error("Erro ao carregar compras", b), _(Be, [], !0), _(Ot, !1);
+                console.error("Error loading purchases", b), _(Be, [], !0), _(Ot, !1);
             }
             if ((_(P, null), n.role !== "user"))
                 try {
@@ -355,7 +355,7 @@ function Oi(u, o) {
                 }
             await qe("received", !0);
         } catch (n) {
-            _(Y, (n == null ? void 0 : n.message) ?? "Erro ao carregar usuário", !0);
+            _(Y, (n == null ? void 0 : n.message) ?? "Error loading user", !0);
         } finally {
             _(z, !1);
         }
@@ -363,13 +363,13 @@ function Oi(u, o) {
     async function za() {
         const n = Number(e(c).trim());
         if (!n || isNaN(n)) {
-            oe.error("Informe um ID numérico por enquanto");
+            oe.error("Enter a valid user ID");
             return;
         }
         Es(`/admin/users?id=${n}`);
     }
     async function zr(n) {
-        e(l) && (await ge.postSetUserDroplets(e(l).id, n), (e(l).droplets = Math.max(0, (e(l).droplets ?? 0) + n)), Sa(`Droplets ${n >= 0 ? "+" : "-"}${Math.abs(n)}, agora ${e(l).droplets}`));
+        e(l) && (await ge.postSetUserDroplets(e(l).id, n), (e(l).droplets = Math.max(0, (e(l).droplets ?? 0) + n)), Sa(`Droplets ${n >= 0 ? "+" : "-"}${Math.abs(n)}, now ${e(l).droplets}`));
     }
     async function Sr() {
         if (e(l) && e(l))
@@ -377,7 +377,7 @@ function Oi(u, o) {
                 const n = await ge.getUserNotes(e(l).id);
                 _(V, n.notes, !0);
             } catch (n) {
-                console.error("Erro ao carregar notas", n), _(V, [], !0);
+                console.error("Error loading notes", n), _(V, [], !0);
             }
     }
     async function Sa(n) {
@@ -385,15 +385,15 @@ function Oi(u, o) {
         const b = n.trim();
         if (b)
             try {
-                _(z, !0), await ge.addUserNote(e(l).id, b), (n = ""), oe.success("Nota adicionada");
+                _(z, !0), await ge.addUserNote(e(l).id, b), (n = ""), oe.success("Note added");
                 try {
                     const g = await ge.getUserNotes(e(l).id);
                     _(V, g.notes, !0);
                 } catch (g) {
-                    console.error("Erro ao recarregar notas", g);
+                    console.error("Error reloading notes", g);
                 }
             } catch (g) {
-                oe.error((g == null ? void 0 : g.message) ?? "Falha ao adicionar nota");
+                oe.error((g == null ? void 0 : g.message) ?? "Failed to add note");
             } finally {
                 _(z, !1);
             }
