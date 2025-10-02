@@ -70286,7 +70286,7 @@ function uF(m, a) {
 			}
 		);
 	function ge(bt) {
-		return `https://maps.wplace.live/styles/${
+		return `/maps/styles/${
 			bt === "custom-winter" ? "liberty" : "fiord"
 		}`;
 	}

@@ -1,4 +1,4 @@
-const ae = "https://backend.wplace.live/files",
+const ae = "/files",
 	e = location.pathname.split("/").slice(0, -1).join("/"),
 	ne = [
 		e + "/_app/immutable/entry/app.DTM8GXam.js",

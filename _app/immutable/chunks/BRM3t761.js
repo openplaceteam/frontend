@@ -62,10 +62,10 @@ try {
 				"sentry-dbid-87aabbe3-7829-4f34-ab59-ca38cce958a0"));
 	})();
 } catch {}
-const Ee = "true",
-	la = "https://backend.wplace.live/files",
+const Ee = "false",
+	la = "/files",
 	da = "0x4AAAAAABpHqZ-6i7uL0nmG",
-	ue = "https://backend.wplace.live",
+	ue = "",
 	ua = "0x4AAAAAABpqJe8FO0N84q0F";
 function ga(...a) {
 	return a.filter(Boolean).join(" ");

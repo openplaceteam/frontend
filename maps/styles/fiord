@@ -5,17 +5,17 @@
 			"maxzoom": 6,
 			"tileSize": 256,
 			"tiles": [
-				"https://maps.wplace.live/natural_earth/ne2sr/{z}/{x}/{y}.png"
+				"https://tiles.openfreemap.org/natural_earth/ne2sr/{z}/{x}/{y}.png"
 			],
 			"type": "raster"
 		},
 		"openmaptiles": {
 			"type": "vector",
-			"url": "https://maps.wplace.live/planet"
+			"url": "https://tiles.openfreemap.org/planet"
 		}
 	},
-	"sprite": "https://maps.wplace.live/sprites/ofm_f384/ofm",
-	"glyphs": "https://maps.wplace.live/fonts/{fontstack}/{range}.pbf",
+	"sprite": "https://tiles.openfreemap.org/sprites/ofm_f384/ofm",
+	"glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
 	"layers": [
 		{
 			"id": "background",
