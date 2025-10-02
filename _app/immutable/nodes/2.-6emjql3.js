@@ -76,7 +76,7 @@ function re(e, d) {
 	}
 	var n = H();
 	U((r) => {
-		S.title = "Wplace - Admin";
+		S.title = "openplace - Admin";
 	});
 	var l = t(n),
 		c = t(l),

@@ -400,7 +400,7 @@ function Vr(p, c) {
 		Z = B(void 0);
 	var va = Ur();
 	vs((n) => {
-		ns.title = "Wplace - Moderation";
+		ns.title = "openplace - Moderation";
 	});
 	var Ie = K(va),
 		ze = t(Ie),

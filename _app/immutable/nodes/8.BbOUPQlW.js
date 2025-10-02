@@ -170,7 +170,7 @@ function Et(f, p) {
 	}
 	var P = vt();
 	Ge((a) => {
-		Me.title = "Wplace - Admin Dashboard";
+		Me.title = "openplace - Admin Dashboard";
 	});
 	var Q = t(P),
 		U = t(Q),

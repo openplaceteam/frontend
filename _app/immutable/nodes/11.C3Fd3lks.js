@@ -266,7 +266,7 @@ function Or(v, u) {
 	}
 	var F = xr();
 	Ce((a) => {
-		Oe.title = "Wplace - Admin - Reports - Leaderboard";
+		Oe.title = "openplace - Admin - Reports - Leaderboard";
 	});
 	var P = t(F),
 		V = t(P),

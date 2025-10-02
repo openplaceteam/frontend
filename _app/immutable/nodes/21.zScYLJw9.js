@@ -472,7 +472,7 @@ Calibri;color:#595959;mso-themecolor:text1;mso-themetint:166;" class="svelte-11v
 function u(t) {
 	var e = p();
 	v((b) => {
-		r.title = "Wplace - Terms of Service";
+		r.title = "openplace - Terms of Service";
 	});
 	var s = l(e),
 		o = l(s);

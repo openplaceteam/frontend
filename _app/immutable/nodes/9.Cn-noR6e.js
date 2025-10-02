@@ -41,7 +41,7 @@ try {
 } catch {}
 function s(e) {
 	o((d) => {
-		n.title = "Wplace - Admin - Mods Dashboard";
+		n.title = "openplace - Admin - Mods Dashboard";
 	});
 }
 export { s as component };

@@ -66,7 +66,7 @@ function M(e, o) {
 		y();
 	var t = E();
 	g((n) => {
-		m.title = "Wplace - Admin Dashboard";
+		m.title = "openplace - Admin Dashboard";
 	});
 	var a = u(s(t), 2),
 		r = s(a, !0);

@@ -80,7 +80,7 @@ function X(e, d) {
 	}
 	var n = B();
 	j((t) => {
-		D.title = "Wplace - Admin - Mods";
+		D.title = "openplace - Admin - Mods";
 	});
 	var l = o(n),
 		m = v(o(l), 2),

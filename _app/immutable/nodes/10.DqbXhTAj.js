@@ -262,7 +262,7 @@ function Oa(u, v) {
 	}
 	var P = fa();
 	Ce((r) => {
-		Oe.title = "Wplace - Admin - Mods - Leaderboard";
+		Oe.title = "openplace - Admin - Mods - Leaderboard";
 	});
 	var F = t(P),
 		V = t(F),

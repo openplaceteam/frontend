@@ -146,7 +146,7 @@ function aa(a, e) {
 	var I = Me();
 	fe((r) => {
 		var d = Ve();
-		ue(4), w((L) => (ce.title = `Wplace - ${L ?? ""}`), [() => ke()]), l(r, d);
+		ue(4), w((L) => (ce.title = `openplace - ${L ?? ""}`), [() => ke()]), l(r, d);
 	});
 	var W = s(I);
 	{

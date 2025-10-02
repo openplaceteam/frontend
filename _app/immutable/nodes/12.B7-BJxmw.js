@@ -565,7 +565,7 @@ function Oi(u, o) {
 	}
 	var Kt = bi();
 	js((n) => {
-		Ss.title = "Wplace - Admin - Users";
+		Ss.title = "openplace - Admin - Users";
 	});
 	var Qt = a(Kt),
 		Wt = a(Qt),

@@ -68,7 +68,7 @@ function M(e, t) {
 	y(t, !1), E();
 	var n = j();
 	$((p) => {
-		u((f) => (T.title = `Wplace - ${f ?? ""}`), [() => b()]);
+		u((f) => (T.title = `openplace - ${f ?? ""}`), [() => b()]);
 	});
 	var s = a(n),
 		_ = a(s);

@@ -1,7 +1,7 @@
 {
-  "name": "Wplace",
-  "short_name": "Wplace",
-  "description": "Wplace is a collaborative, real-time pixel canvas layered over the world map, where anyone can paint and create art together.",
+  "name": "openplace",
+  "short_name": "openplace",
+  "description": "openplace is a free unofficial open source backend for wplace.",
   "start_url": "/",
   "theme_color": "#f8f4f0",
   "background_color": "#ffffff",

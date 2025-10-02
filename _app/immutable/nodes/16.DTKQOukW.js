@@ -98,7 +98,7 @@ function ge(e, t) {
 	});
 	var l = ae();
 	O((r) => {
-		w((s) => (N.title = `Wplace - ${s ?? ""}`), [() => T()]);
+		w((s) => (N.title = `openplace - ${s ?? ""}`), [() => T()]);
 	});
 	var c = a(l),
 		q = a(c);

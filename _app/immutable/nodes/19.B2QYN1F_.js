@@ -55,7 +55,7 @@ var h =
 function w(e) {
 	var a = h();
 	u((f) => {
-		n.title = "Wplace - Refund Policy";
+		n.title = "openplace - Refund Policy";
 	});
 	var i = s(a),
 		r = s(i);

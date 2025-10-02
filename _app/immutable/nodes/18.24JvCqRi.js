@@ -1086,7 +1086,7 @@ var r =
 function g(s) {
 	var e = r();
 	d((b) => {
-		c.title = "Wplace - Privacy Policy";
+		c.title = "openplace - Privacy Policy";
 	});
 	var l = t(e),
 		n = t(l);

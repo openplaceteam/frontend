@@ -484,7 +484,7 @@ function Ro(d, r) {
 	}
 	var Se = no();
 	tr((n) => {
-		Za.title = "Wplace - Admin - Alliances";
+		Za.title = "openplace - Admin - Alliances";
 	});
 	var De = a(Se),
 		Re = a(De),

@@ -50,7 +50,7 @@ var u =
 function y(o) {
 	var e = u();
 	c((p) => {
-		t.title = "Wplace - Política de Reembolso";
+		t.title = "openplace - Política de Reembolso";
 	});
 	var a = s(e),
 		i = s(a);
