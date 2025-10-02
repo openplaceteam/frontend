@@ -67184,7 +67184,7 @@ function PR(m, a) {
 					k(Et),
 						We(
 							(Xr) => {
-								Tr(Et, "href", `${yi.url.origin ?? ""}/admin/dashboard`),
+								Tr(Et, "href", `${yi.url.origin ?? ""}/admin`),
 									de(ht, ` ${Xr ?? ""}`);
 							},
 							[() => rI()]
@@ -70826,7 +70826,7 @@ function uF(m, a) {
 												bn,
 												"href",
 												((vn = Mt.data) == null ? void 0 : vn.role) === "admin"
-													? `${yi.url.origin}/admin/dashboard`
+													? `${yi.url.origin}/admin`
 													: `${yi.url.origin}/moderation`
 											);
 										}),
