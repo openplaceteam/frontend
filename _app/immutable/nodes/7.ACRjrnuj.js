@@ -1,0 +1,1250 @@
+import "../chunks/Ch2Ub8FX.js";
+import {
+	at as Ga,
+	p as Ja,
+	au as S,
+	av as Ka,
+	y as Ht,
+	g as e,
+	aw as s,
+	f as L,
+	d as a,
+	s as l,
+	t as C,
+	ax as Va,
+	b as x,
+	c as Xa,
+	$ as Za,
+	r as t,
+	ay as fe,
+	a as ie,
+	u as $e,
+} from "../chunks/CMvZtFtm.js";
+import { s as c } from "../chunks/DVA6u9-7.js";
+import { i as U } from "../chunks/BF50aS-j.js";
+import { k as er, t as Ot } from "../chunks/BBgyHb-Z.js";
+import { e as it } from "../chunks/CXkjfmFU.js";
+import { h as tr } from "../chunks/P77cUGnY.js";
+import { s as Qt, r as ct, d as ar, a as ce } from "../chunks/C5yqZvKC.js";
+import { b as dt } from "../chunks/Dpga8uG-.js";
+import { g as Wt } from "../chunks/CyB--sFG.js";
+import { p as vt } from "../chunks/B6ZK_HZO.js";
+import {
+	a as G,
+	t as D,
+	i as rr,
+	h as nr,
+	f as or,
+	j as lr,
+	k as sr,
+} from "../chunks/BRM3t761.js";
+import {
+	o as ir,
+	L as cr,
+	s as Yt,
+	g as dr,
+	a as vr,
+} from "../chunks/CgCA7Awo.js";
+import { P as Gt } from "../chunks/D3yaN7Zl.js";
+import { p as _t, L as Jt, d as _r } from "../chunks/BKioTOWR.js";
+import { R as ur } from "../chunks/m3o6lEf1.js";
+import { g as F } from "../chunks/CV9xcpLq.js";
+import { r as br } from "../chunks/C3E1P42D.js";
+import { c as ut } from "../chunks/CHGjpGz-.js";
+import { c as mr } from "../chunks/C4yB2Gnm.js";
+import {
+	s as Kt,
+	v as Vt,
+	m as fr,
+	p as pr,
+	l as xr,
+} from "../chunks/BsOIMr0T.js";
+import { c as gr } from "../chunks/CVa8RI1g.js";
+import { l as Xt } from "../chunks/BHI5vujT.js";
+import { r as hr } from "../chunks/DouSnzU9.js";
+import { s as yr, l as wr } from "../chunks/BFFUopoM.js";
+import { g as Pe, a as kr } from "../chunks/lE0oaQc5.js";
+import { f as Zt } from "../chunks/wZ7b5CwQ.js";
+(function () {
+	try {
+		var d =
+			typeof window < "u"
+				? window
+				: typeof global < "u"
+				? global
+				: typeof globalThis < "u"
+				? globalThis
+				: typeof self < "u"
+				? self
+				: {};
+		d.SENTRY_RELEASE = { id: "9ccec90dcd6b8d85831cf2b37643f1564d033383" };
+	} catch {}
+})();
+try {
+	(function () {
+		var d =
+				typeof window < "u"
+					? window
+					: typeof global < "u"
+					? global
+					: typeof globalThis < "u"
+					? globalThis
+					: typeof self < "u"
+					? self
+					: {},
+			r = new d.Error().stack;
+		r &&
+			((d._sentryDebugIds = d._sentryDebugIds || {}),
+			(d._sentryDebugIds[r] = "24d6febf-d6d7-4615-95c2-acc3b7ee0a01"),
+			(d._sentryDebugIdIdentifier =
+				"sentry-dbid-24d6febf-d6d7-4615-95c2-acc3b7ee0a01"));
+	})();
+} catch {}
+const Ar = () => "Search alliance (name or ID)",
+	Ir = () => "Buscar aliança (nome ou ID)",
+	Lr = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? Ar() : Ir()),
+	Nr = () => "Partial name or numeric ID",
+	$r = () => "Nome parcial ou ID numérico",
+	Pr = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? Nr() : $r()),
+	Cr = () => "Results",
+	Sr = () => "Resultados",
+	Dr = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? Cr() : Sr()),
+	Rr = () => "No alliance found",
+	Mr = () => "Nenhuma aliança encontrada",
+	Fr = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? Rr() : Mr()),
+	Tr = () => "No alliance selected",
+	zr = () => "Nenhuma aliança selecionada",
+	jr = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? Tr() : zr()),
+	Er = () => "Change name",
+	Br = () => "Alterar nome",
+	qr = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? Er() : Br()),
+	Ur = () => "Change leader",
+	Hr = () => "Alterar líder",
+	ea = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? Ur() : Hr()),
+	Or = () => "Ban all members",
+	Qr = () => "Banir todos os membros",
+	ta = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? Or() : Qr()),
+	Wr = () => "Creator (leader)",
+	Yr = () => "Proprietário (líder)",
+	Gr = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? Wr() : Yr()),
+	Jr = () => "No coordinates",
+	Kr = () => "Sem coordenadas",
+	Vr = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? Jr() : Kr()),
+	Xr = () => "Actions",
+	Zr = () => "Ações",
+	en = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? Xr() : Zr()),
+	tn = () => "Remove",
+	an = () => "Remover",
+	rn = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? tn() : an()),
+	nn = () => "No members",
+	on = () => "Sem membros",
+	ln = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? nn() : on()),
+	sn = () => "Rename alliance",
+	cn = () => "Alterar nome da aliança",
+	dn = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? sn() : cn()),
+	vn = () => "Inform the ID of the new leader",
+	_n = () => "Informe o ID do novo líder",
+	un = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? vn() : _n()),
+	bn = () =>
+		"Are you sure you want to ban all members of this alliance? This action cannot be undone.",
+	mn = () =>
+		"Tem certeza que deseja banir todos os membros desta aliança? Esta ação não pode ser desfeita.",
+	fn = (d = {}, r = {}) => ((r.locale ?? F()) === "en" ? bn() : mn());
+function pn(d, r, _, R) {
+	e(r) && (s(_, e(r).name ?? "", !0), s(R, !0));
+}
+function xn(d, r, _, R) {
+	e(r) && (s(_, e(r).ownerId ? String(e(r).ownerId) : "", !0), s(R, !0));
+}
+function gn(d, r) {
+	s(r, !0);
+}
+async function hn(d, r, _, R, W, ee, b, K) {
+	if (e(r)) {
+		if (!e(_)) {
+			D.error(vr());
+			return;
+		}
+		if (!(e(R) && !e(R)()))
+			try {
+				s(W, !0),
+					await G.banAllAllianceMembers(e(r).id, e(_), e(ee)),
+					D.success("Todos os membros banidos"),
+					await b(e(r).id, !0),
+					s(K, !1);
+			} catch (J) {
+				D.error((J == null ? void 0 : J.message) ?? "Falha ao banir membros");
+			} finally {
+				s(W, !1);
+			}
+	}
+}
+var yn = (d, r, _, R) => {
+		s(r, ""), s(_, [], !0), s(R, null);
+	},
+	wn = L(
+		'<div class="flex items-center gap-2"><span class="loading loading-spinner loading-sm"></span> <span> </span></div>'
+	),
+	kn = L('<div class="text-error"> </div>'),
+	An = L('<div class="text-base-content/70 text-sm"> </div>'),
+	In = (d, r, _) => r(e(_).id, !0),
+	Ln = L(
+		'<button class="bg-base-100 hover:bg-base-200 rounded-box border p-3 text-left transition"><div class="flex items-center justify-between"><span> </span> <span class="text-base-content/70 text-xs"> </span></div> <div class="text-base-content/80 text-sm"> <b> </b></div></button>'
+	),
+	Nn = L(
+		'<div class="flex max-h-[360px] flex-col gap-2 overflow-auto pr-1"></div>'
+	),
+	$n = L(
+		'<div class="flex items-center gap-2"><span class="loading loading-spinner loading-sm"></span> <span> </span></div>'
+	),
+	Pn = L('<div class="text-error"> </div>'),
+	Cn = L('<div class="text-base-content/70"> </div>'),
+	Sn = (d, r, _) => {
+		var R;
+		return (
+			((R = e(r)) == null ? void 0 : R.ownerId) !== void 0 && _(e(r).ownerId)
+		);
+	},
+	Dn = (d, r, _) => r(e(_)),
+	Rn = L(
+		'<div class="text-base-content/80 text-sm"> </div> <button class="btn btn-sm mt-2"><!> </button>',
+		1
+	),
+	Mn = L('<div class="text-base-content/70 text-sm"> </div>'),
+	Fn = (d, r, _) => e(r) && _(e(r).id, !0),
+	Tn = (d, r, _) => r(e(_).id),
+	zn = (d, r, _) => r(e(_)),
+	jn = (d, r, _) => r(e(_), "member"),
+	En = (d, r, _) => r(e(_), "admin"),
+	Bn = (d, r, _) => r(e(_)),
+	qn = L(
+		'<tr><td class="max-sm:hidden"><!></td><td><button> <span class="text-base-content/70 ml-0.5"> </span></button></td><td class="text-center"> </td><td class="text-center"><button class="btn btn-ghost btn-xs"><!> </button></td><td class="text-center"><div class="join join-horizontal"><button>Member</button> <button>Admin</button></div></td><td class="text-center"><button class="btn btn-error btn-xs"> </button></td></tr>'
+	),
+	Un = L(
+		'<tr><td colspan="6" class="text-base-content/70 text-center"> </td></tr>'
+	),
+	Hn = (d, r) => r(),
+	On = L(
+		'<div class="mt-2 flex justify-end"><button class="btn btn-sm"> </button></div>'
+	),
+	Qn = L(
+		'<div class="flex flex-col gap-4"><div class="flex flex-col justify-between gap-3 md:flex-row"><div class="flex items-center gap-2"><span> </span> <span> </span></div> <div class="flex flex-wrap gap-2"><button class="btn btn-outline btn-sm"> </button> <button class="btn btn-outline btn-sm"> </button> <button class="btn btn-error btn-sm"> </button></div></div> <div class="rounded-box border p-3"><div class="text-base-content/70 text-xs"> </div> <div class="whitespace-pre-wrap"> </div></div> <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3"><div class="rounded-box border p-3"><div class="text-base-content/70 text-xs"> </div> <div class="mt-1 flex items-center gap-2"><!> <button class="link font-semibold"> </button></div></div> <div class="rounded-box border p-3"><div class="text-base-content/70 text-xs">HQ</div> <div class="mt-1"><!></div></div> <div class="rounded-box border p-3"><div class="text-base-content/70 text-xs"> </div> <div class="text-xl font-bold"> </div></div></div> <div class="rounded-box border p-3"><div class="mb-2 flex items-center justify-between"><div><h3 class="text-lg font-semibold"> </h3> <div class="text-base-content/70 text-sm">Total: <b> </b></div></div> <div class="flex items-center gap-2"><button class="btn btn-sm"><!> </button></div></div> <div class="max-h-[520px] overflow-auto"><table class="table-sm table"><thead><tr><th class="max-sm:hidden"></th><th> </th><th class="text-center"> </th><th class="text-center"> </th><th class="text-center"> </th><th class="text-center"> </th></tr></thead><tbody><!><!></tbody></table></div> <!></div></div>'
+	),
+	Wn = (d, r) => d.key === "Enter" && r(),
+	Yn = (d, r) => s(r, !1),
+	Gn = (d, r) => s(r, !1),
+	Jn = L(
+		'<div class="modal modal-open"><div class="modal-box"><h3 class="text-lg font-bold"> </h3> <div class="mt-3"><input class="input input-bordered w-full" placeholder="Novo nome"/></div> <div class="modal-action"><button class="btn"> </button> <button class="btn btn-primary"> </button></div></div> <button type="button" class="modal-backdrop" aria-label="Close dialog"></button></div>'
+	),
+	Kn = (d, r) => d.key === "Enter" && r(),
+	Vn = (d, r) => s(r, !1),
+	Xn = (d, r) => s(r, !1),
+	Zn = L(
+		'<div class="modal modal-open"><div class="modal-box"><h3 class="text-lg font-bold"> </h3> <p class="text-base-content/70 text-sm"> </p> <div class="mt-3"><input class="input input-bordered w-full" type="number" min="1" placeholder="ID do novo líder"/></div> <div class="modal-action"><button class="btn"> </button> <button class="btn btn-primary"> </button></div></div> <button type="button" class="modal-backdrop" aria-label="Close dialog"></button></div>'
+	),
+	eo = L("<option> </option>"),
+	to = (d, r) => s(r, !1),
+	ao = (d, r) => s(r, !1),
+	ro = L(
+		'<div class="modal modal-open"><div class="modal-box max-w-xl"><h3 class="text-error text-lg font-bold"> </h3> <p class="mt-2"> </p> <section class="mt-4"><label class="form-control w-full"><span class="label-text text-sm"> </span> <select class="select select-bordered"><option disabled selected>Select</option><!></select></label></section> <section class="mt-4"><!></section> <div class="modal-action"><button class="btn"> </button> <button class="btn btn-error"> </button></div></div> <button type="button" class="modal-backdrop" aria-label="Close dialog"></button></div>'
+	),
+	no = L(
+		'<section class="flex flex-col gap-4 p-4"><div class="grid gap-4 md:grid-cols-[360px_1fr]"><div class="rounded-box bg-base-100 border-base-300 border p-4 shadow"><form class="flex flex-col gap-2"><label class="form-control"><span class="label-text text-sm"> </span> <input class="input input-bordered input-sm"/></label> <div class="flex gap-2"><button class="btn btn-primary btn-sm"> </button> <button class="btn btn-outline btn-sm" type="button"> </button></div></form> <div class="mt-3"><div class="text-base-content/70 mb-1 text-sm"> </div> <!></div></div> <div class="rounded-box bg-base-100 border-base-300 border p-4 shadow"><!></div></div> <!> <!> <!></section>'
+	);
+function Ro(d, r) {
+	Ja(r, !0);
+	let _ = S(""),
+		R = S(!1),
+		W = S(Ka([])),
+		ee = S(null),
+		b = S(!1),
+		K = S(null),
+		J = S(null),
+		i = S(null),
+		de = S(!1),
+		pe = S(""),
+		ve = S(!1),
+		xe = S(""),
+		re = S(!1),
+		ne = S(""),
+		ge = S(""),
+		Ce = S(null);
+	const aa = [
+		{ value: "inappropriate-content", label: rr() },
+		{ value: "hate-speech", label: nr() },
+		{ value: "doxxing", label: or() },
+		{ value: "bot", label: lr() },
+		{ value: "griefing", label: sr() },
+		{ value: "other", label: ir() },
+	];
+	let he = S(0);
+	const ra = 50;
+	let na = $e(() => !!e(i) && e(i).members.length < e(i).membersCount);
+	Ht(() => {
+		e(re) || (s(ne, ""), s(ge, ""));
+	}),
+		Ht(() => {
+			const n = vt.url.searchParams.get("id"),
+				o = n ? Number(n) : null;
+			async function v() {
+				o !== e(J) &&
+					(s(J, o, !0),
+					n && s(_, n, !0),
+					e(J) != null && !isNaN(e(J))
+						? await ye(e(J), !0)
+						: (s(i, null), s(K, null)));
+			}
+			v();
+		});
+	async function bt() {
+		try {
+			s(ee, null), s(R, !0);
+			const n = e(_).trim();
+			if (!n) {
+				s(W, [], !0);
+				return;
+			}
+			const o = Number(n);
+			if (Number.isFinite(o))
+				try {
+					const m = await G.getAllianceById(o);
+					if (m) {
+						s(
+							W,
+							[{ id: m.id, name: m.name, pixelsPainted: m.pixelsPainted ?? 0 }],
+							!0
+						);
+						return;
+					}
+				} catch {}
+			const v = await G.searchAlliances(n);
+			s(W, v, !0);
+		} catch (n) {
+			console.error(n),
+				s(ee, (n == null ? void 0 : n.message) ?? "Falha na busca", !0),
+				s(W, [], !0);
+		} finally {
+			s(R, !1);
+		}
+	}
+	async function ye(n, o = !1) {
+		try {
+			s(b, !0), s(K, null);
+			const v = await G.getAllianceFull(n);
+			if (!v) {
+				s(i, null), s(K, "Alliance not found");
+				return;
+			}
+			s(i, v, !0),
+				o && (s(he, 0), oa() && (await mt(!0))),
+				Wt(`/admin/alliances?id=${n}`, { replaceState: !0 });
+		} catch (v) {
+			console.error(v),
+				s(
+					K,
+					(v == null ? void 0 : v.message) ?? "Erro ao carregar aliança",
+					!0
+				),
+				s(i, null);
+		} finally {
+			s(b, !1);
+		}
+	}
+	function oa() {
+		return !!e(i) && e(i).members.length < e(i).membersCount;
+	}
+	async function mt(n = !1) {
+		if (e(i))
+			try {
+				s(b, !0), n && s(he, 0);
+				const o = n ? 0 : e(he) + 1,
+					v = await G.getAdminAllianceMembers(e(i).id, {
+						page: o,
+						pageSize: ra,
+					}),
+					m = o === 0 ? v.members : [...e(i).members, ...v.members];
+				s(
+					i,
+					{ ...e(i), members: m, membersCount: v.total ?? e(i).membersCount },
+					!0
+				),
+					s(he, o, !0);
+			} catch (o) {
+				console.error(o),
+					D.error(
+						(o == null ? void 0 : o.message) ?? "Falha ao carregar membros"
+					);
+			} finally {
+				s(b, !1);
+			}
+	}
+	async function ft() {
+		if (!e(i)) return;
+		const n = e(pe).trim();
+		if (!n) {
+			D.error("Informe um nome válido");
+			return;
+		}
+		try {
+			s(b, !0),
+				await G.renameAlliance(e(i).id, n),
+				s(i, { ...e(i), name: n }, !0),
+				D.success("Nome alterado"),
+				s(de, !1);
+		} catch (o) {
+			D.error((o == null ? void 0 : o.message) ?? "Falha ao alterar nome");
+		} finally {
+			s(b, !1);
+		}
+	}
+	async function pt() {
+		if (!e(i)) return;
+		const n = Number(e(xe));
+		if (!Number.isFinite(n) || n <= 0) {
+			D.error("ID inválido");
+			return;
+		}
+		try {
+			s(b, !0), await G.changeAllianceLeader(e(i).id, n);
+			const o = await G.getAllianceFull(e(i).id);
+			s(i, o, !0), D.success("Líder alterado"), s(ve, !1);
+		} catch (o) {
+			D.error((o == null ? void 0 : o.message) ?? "Falha ao alterar líder");
+		} finally {
+			s(b, !1);
+		}
+	}
+	async function xt(n, o) {
+		if (e(i))
+			try {
+				s(b, !0),
+					await G.setAllianceMemberRole(e(i).id, n.id, o),
+					s(
+						i,
+						{
+							...e(i),
+							members: e(i).members.map((v) =>
+								v.id === n.id ? { ...v, role: o } : v
+							),
+						},
+						!0
+					),
+					D.success("Cargo atualizado");
+			} catch (v) {
+				D.error((v == null ? void 0 : v.message) ?? "Falha ao atualizar cargo");
+			} finally {
+				s(b, !1);
+			}
+	}
+	async function la(n) {
+		if (e(i)) {
+			if (n.id == e(i).ownerId) {
+				D.error("Não é possível remover o líder da aliança");
+				return;
+			}
+			try {
+				s(b, !0),
+					await G.removeAllianceMember(e(i).id, n.id),
+					s(
+						i,
+						{
+							...e(i),
+							members: e(i).members.filter((o) => o.id !== n.id),
+							membersCount: Math.max(0, e(i).membersCount - 1),
+						},
+						!0
+					),
+					D.success("Membro removido");
+			} catch (o) {
+				D.error((o == null ? void 0 : o.message) ?? "Falha ao remover membro");
+			} finally {
+				s(b, !1);
+			}
+		}
+	}
+	function sa(n) {
+		if (!n.lastPixelLatitude || !n.lastPixelLongitude) {
+			D.error("Sem registro de último pixel");
+			return;
+		}
+		const o = `${vt.url.origin}/?lat=${n.lastPixelLatitude}&lng=${n.lastPixelLongitude}&select=true`;
+		window.open(o, "_blank");
+	}
+	function ia(n) {
+		const { hqLatitude: o, hqLongitude: v } = n;
+		if (o == null || v == null) {
+			D.error("No coords for HQ");
+			return;
+		}
+		const m = `${vt.url.origin}/?lat=${o}&lng=${v}&select=true`;
+		window.open(m, "_blank");
+	}
+	function gt(n) {
+		Wt(`/admin/users?id=${n}`);
+	}
+	var Se = no();
+	tr((n) => {
+		Za.title = "Wplace - Admin - Alliances";
+	});
+	var De = a(Se),
+		Re = a(De),
+		we = a(Re),
+		Me = a(we),
+		Fe = a(Me),
+		ca = a(Fe, !0);
+	t(Fe);
+	var Te = l(Fe, 2);
+	ct(Te), t(Me);
+	var ht = l(Me, 2),
+		_e = a(ht);
+	_e.__click = bt;
+	var da = a(_e, !0);
+	t(_e);
+	var ze = l(_e, 2);
+	ze.__click = [yn, _, W, ee];
+	var va = a(ze, !0);
+	t(ze), t(ht), t(we);
+	var yt = l(we, 2),
+		je = a(yt),
+		_a = a(je, !0);
+	t(je);
+	var ua = l(je, 2);
+	{
+		var ba = (n) => {
+				var o = wn(),
+					v = l(a(o), 2),
+					m = a(v, !0);
+				t(v), t(o), C((T) => c(m, T), [() => Xt()]), x(n, o);
+			},
+			ma = (n) => {
+				var o = fe(),
+					v = ie(o);
+				{
+					var m = (p) => {
+							var h = kn(),
+								N = a(h, !0);
+							t(h), C(() => c(N, e(ee))), x(p, h);
+						},
+						T = (p) => {
+							var h = fe(),
+								N = ie(h);
+							{
+								var M = (f) => {
+										var g = An(),
+											y = a(g, !0);
+										t(g), C((k) => c(y, k), [() => Fr()]), x(f, g);
+									},
+									q = (f) => {
+										var g = Nn();
+										it(
+											g,
+											21,
+											() => e(W),
+											(y) => y.id,
+											(y, k) => {
+												var $ = Ln();
+												$.__click = [In, ye, k];
+												var z = a($),
+													E = a(z),
+													j = a(E, !0);
+												t(E);
+												var V = l(E, 2),
+													Y = a(V);
+												t(V), t(z);
+												var oe = l(z, 2),
+													te = a(oe),
+													P = l(te),
+													H = a(P, !0);
+												t(P),
+													t(oe),
+													t($),
+													C(
+														(A, ae, O) => {
+															ce(E, 1, `font-semibold ${A ?? ""}`),
+																c(j, e(k).name),
+																c(Y, `#${e(k).id ?? ""}`),
+																c(te, `${ae ?? ""}: `),
+																c(H, O);
+														},
+														[
+															() => Pe(e(k).id),
+															() => _t(),
+															() => e(k).pixelsPainted.toLocaleString("en-US"),
+														]
+													),
+													x(y, $);
+											}
+										),
+											t(g),
+											x(f, g);
+									};
+								U(
+									N,
+									(f) => {
+										e(W).length === 0 ? f(M) : f(q, !1);
+									},
+									!0
+								);
+							}
+							x(p, h);
+						};
+					U(
+						v,
+						(p) => {
+							e(ee) ? p(m) : p(T, !1);
+						},
+						!0
+					);
+				}
+				x(n, o);
+			};
+		U(ua, (n) => {
+			e(R) ? n(ba) : n(ma, !1);
+		});
+	}
+	t(yt), t(Re);
+	var wt = l(Re, 2),
+		fa = a(wt);
+	{
+		var pa = (n) => {
+				var o = $n(),
+					v = l(a(o), 2),
+					m = a(v, !0);
+				t(v), t(o), C((T) => c(m, T), [() => Xt()]), x(n, o);
+			},
+			xa = (n) => {
+				var o = fe(),
+					v = ie(o);
+				{
+					var m = (p) => {
+							var h = Pn(),
+								N = a(h, !0);
+							t(h), C(() => c(N, e(K))), x(p, h);
+						},
+						T = (p) => {
+							var h = fe(),
+								N = ie(h);
+							{
+								var M = (f) => {
+										var g = Cn(),
+											y = a(g, !0);
+										t(g), C((k) => c(y, k), [() => jr()]), x(f, g);
+									},
+									q = (f) => {
+										var g = fe(),
+											y = ie(g);
+										er(
+											y,
+											() => e(i).id,
+											(k) => {
+												var $ = Qn(),
+													z = a($),
+													E = a(z),
+													j = a(E),
+													V = a(j, !0);
+												t(j);
+												var Y = l(j, 2),
+													oe = a(Y);
+												t(Y), t(E);
+												var te = l(E, 2),
+													P = a(te);
+												P.__click = [pn, i, pe, de];
+												var H = a(P, !0);
+												t(P);
+												var A = l(P, 2);
+												A.__click = [xn, i, xe, ve];
+												var ae = a(A, !0);
+												t(A);
+												var O = l(A, 2);
+												O.__click = [gn, re];
+												var Ee = a(O, !0);
+												t(O), t(te), t(z);
+												var Be = l(z, 2),
+													qe = a(Be),
+													ka = a(qe, !0);
+												t(qe);
+												var It = l(qe, 2),
+													Aa = a(It, !0);
+												t(It), t(Be);
+												var Ue = l(Be, 2),
+													He = a(Ue),
+													Oe = a(He),
+													Ia = a(Oe, !0);
+												t(Oe);
+												var Lt = l(Oe, 2),
+													Nt = a(Lt);
+												Gt(Nt, {
+													class: "size-8 border",
+													get userId() {
+														return e(i).ownerId;
+													},
+													pictureUrl: void 0,
+												});
+												var Qe = l(Nt, 2);
+												Qe.__click = [Sn, i, gt];
+												var La = a(Qe, !0);
+												t(Qe), t(Lt), t(He);
+												var We = l(He, 2),
+													$t = l(a(We), 2),
+													Na = a($t);
+												{
+													var $a = (w) => {
+															var u = Rn(),
+																I = ie(u),
+																B = a(I);
+															t(I);
+															var Q = l(I, 2);
+															Q.__click = [Dn, ia, i];
+															var X = a(Q);
+															Jt(X, { class: "size-4" });
+															var Z = l(X);
+															t(Q),
+																C(
+																	(le) => {
+																		c(
+																			B,
+																			`Lat: ${e(i).hqLatitude ?? ""}, Lng: ${
+																				e(i).hqLongitude ?? ""
+																			}`
+																		),
+																			c(Z, ` ${le ?? ""}`);
+																	},
+																	[() => Vt()]
+																),
+																x(w, u);
+														},
+														Pa = (w) => {
+															var u = Mn(),
+																I = a(u, !0);
+															t(u), C((B) => c(I, B), [() => Vr()]), x(w, u);
+														};
+													U(Na, (w) => {
+														e(i).hqLatitude != null && e(i).hqLongitude != null
+															? w($a)
+															: w(Pa, !1);
+													});
+												}
+												t($t), t(We);
+												var Pt = l(We, 2),
+													Ye = a(Pt),
+													Ca = a(Ye, !0);
+												t(Ye);
+												var Ct = l(Ye, 2),
+													Sa = a(Ct, !0);
+												t(Ct), t(Pt), t(Ue);
+												var St = l(Ue, 2),
+													Ge = a(St),
+													Je = a(Ge),
+													Ke = a(Je),
+													Da = a(Ke, !0);
+												t(Ke);
+												var Dt = l(Ke, 2),
+													Rt = l(a(Dt)),
+													Ra = a(Rt, !0);
+												t(Rt), t(Dt), t(Je);
+												var Mt = l(Je, 2),
+													ke = a(Mt);
+												ke.__click = [Fn, i, ye];
+												var Ft = a(ke);
+												ur(Ft, { class: "size-4" });
+												var Ma = l(Ft);
+												t(ke), t(Mt), t(Ge);
+												var Ve = l(Ge, 2),
+													Tt = a(Ve),
+													Xe = a(Tt),
+													zt = a(Xe),
+													Ze = l(a(zt)),
+													Fa = a(Ze, !0);
+												t(Ze);
+												var et = l(Ze),
+													Ta = a(et, !0);
+												t(et);
+												var tt = l(et),
+													za = a(tt, !0);
+												t(tt);
+												var at = l(tt),
+													ja = a(at, !0);
+												t(at);
+												var jt = l(at),
+													Ea = a(jt, !0);
+												t(jt), t(zt), t(Xe);
+												var Et = l(Xe),
+													Bt = a(Et);
+												it(
+													Bt,
+													17,
+													() => e(i).members,
+													(w) => w.id,
+													(w, u) => {
+														var I = qn(),
+															B = a(I),
+															Q = a(B);
+														{
+															let st = $e(() => e(u).picture ?? void 0);
+															Gt(Q, {
+																class: "size-8 border",
+																get userId() {
+																	return e(u).id;
+																},
+																get pictureUrl() {
+																	return e(st);
+																},
+															});
+														}
+														t(B);
+														var X = l(B),
+															Z = a(X);
+														Z.__click = [Tn, gt, u];
+														var le = a(Z),
+															Ae = l(le),
+															rt = a(Ae);
+														t(Ae), t(Z), t(X);
+														var ue = l(X),
+															nt = a(ue, !0);
+														t(ue);
+														var be = l(ue),
+															se = a(be);
+														se.__click = [zn, sa, u];
+														var Ie = a(se);
+														Jt(Ie, { class: "size-4" });
+														var ot = l(Ie);
+														t(se), t(be);
+														var me = l(be),
+															qt = a(me),
+															Le = a(qt);
+														Le.__click = [jn, xt, u];
+														var lt = l(Le, 2);
+														(lt.__click = [En, xt, u]), t(qt), t(me);
+														var Ut = l(me),
+															Ne = a(Ut);
+														Ne.__click = [Bn, la, u];
+														var Oa = a(Ne, !0);
+														t(Ne),
+															t(Ut),
+															t(I),
+															C(
+																(st, Qa, Wa, Ya) => {
+																	ce(Z, 1, `link font-semibold ${st ?? ""}`),
+																		c(le, `${e(u).name ?? ""} `),
+																		c(rt, `#${e(u).id ?? ""}`),
+																		c(nt, Qa),
+																		(se.disabled =
+																			!e(u).lastPixelLatitude ||
+																			!e(u).lastPixelLongitude),
+																		c(ot, ` ${Wa ?? ""}`),
+																		ce(
+																			Le,
+																			1,
+																			`btn btn-xs join-item w-16 ${
+																				e(u).role === "member"
+																					? "btn-primary"
+																					: "btn-outline"
+																			}`
+																		),
+																		(Le.disabled =
+																			e(b) || e(u).role === "member"),
+																		ce(
+																			lt,
+																			1,
+																			`btn btn-xs join-item w-16 ${
+																				e(u).role === "admin"
+																					? "btn-primary"
+																					: "btn-outline"
+																			}`
+																		),
+																		(lt.disabled =
+																			e(b) || e(u).role === "admin"),
+																		(Ne.disabled = e(b)),
+																		c(Oa, Ya);
+																},
+																[
+																	() => Pe(e(u).id),
+																	() =>
+																		e(u).pixelsPainted.toLocaleString("en-US"),
+																	() => Vt(),
+																	() => rn(),
+																]
+															),
+															x(w, I);
+													}
+												);
+												var Ba = l(Bt);
+												{
+													var qa = (w) => {
+														var u = Un(),
+															I = a(u),
+															B = a(I, !0);
+														t(I),
+															t(u),
+															C((Q) => c(B, Q), [() => ln()]),
+															x(w, u);
+													};
+													U(Ba, (w) => {
+														e(i).members.length === 0 && w(qa);
+													});
+												}
+												t(Et), t(Tt), t(Ve);
+												var Ua = l(Ve, 2);
+												{
+													var Ha = (w) => {
+														var u = On(),
+															I = a(u);
+														I.__click = [Hn, mt];
+														var B = a(I, !0);
+														t(I),
+															t(u),
+															C(
+																(Q) => {
+																	(I.disabled = e(b)), c(B, Q);
+																},
+																[() => wr()]
+															),
+															x(w, u);
+													};
+													U(Ua, (w) => {
+														e(na) && w(Ha);
+													});
+												}
+												t(St),
+													t($),
+													C(
+														(
+															w,
+															u,
+															I,
+															B,
+															Q,
+															X,
+															Z,
+															le,
+															Ae,
+															rt,
+															ue,
+															nt,
+															be,
+															se,
+															Ie,
+															ot,
+															me
+														) => {
+															ce(j, 1, `text-lg font-semibold ${w ?? ""}`),
+																c(V, e(i).name),
+																ce(
+																	Y,
+																	1,
+																	`badge badge-sm ml-1 border-0 ${u ?? ""} ${
+																		I ?? ""
+																	}`
+																),
+																c(oe, `#${e(i).id ?? ""}`),
+																(P.disabled = e(b)),
+																c(H, B),
+																(A.disabled = e(b)),
+																c(ae, Q),
+																(O.disabled = e(b)),
+																c(Ee, X),
+																c(ka, Z),
+																c(Aa, e(i).description ?? "—"),
+																c(Ia, le),
+																c(La, e(i).ownerName ?? `#${e(i).ownerId}`),
+																c(Ca, Ae),
+																c(Sa, rt),
+																c(Da, ue),
+																c(Ra, e(i).membersCount),
+																(ke.disabled = e(b)),
+																c(Ma, ` ${nt ?? ""}`),
+																c(Fa, be),
+																c(Ta, se),
+																c(za, Ie),
+																c(ja, ot),
+																c(Ea, me);
+														},
+														[
+															() => Pe(e(i).id),
+															() => kr(e(i).id),
+															() => Pe(e(i).id),
+															() => qr(),
+															() => ea(),
+															() => ta(),
+															() => _r(),
+															() => Gr(),
+															() => _t(),
+															() => e(i).pixelsPainted.toLocaleString("en-US"),
+															() => fr(),
+															() => br(),
+															() => pr(),
+															() => _t(),
+															() => xr(),
+															() => hr(),
+															() => en(),
+														]
+													),
+													Ot(
+														1,
+														$,
+														() => Zt,
+														() => ({ duration: 120 })
+													),
+													Ot(
+														2,
+														$,
+														() => Zt,
+														() => ({ duration: 80 })
+													),
+													x(k, $);
+											}
+										),
+											x(f, g);
+									};
+								U(
+									N,
+									(f) => {
+										e(i) ? f(q, !1) : f(M);
+									},
+									!0
+								);
+							}
+							x(p, h);
+						};
+					U(
+						v,
+						(p) => {
+							e(K) ? p(m) : p(T, !1);
+						},
+						!0
+					);
+				}
+				x(n, o);
+			};
+		U(fa, (n) => {
+			e(b) && !e(i) ? n(pa) : n(xa, !1);
+		});
+	}
+	t(wt), t(De);
+	var kt = l(De, 2);
+	{
+		var ga = (n) => {
+			var o = Jn(),
+				v = a(o),
+				m = a(v),
+				T = a(m, !0);
+			t(m);
+			var p = l(m, 2),
+				h = a(p);
+			ct(h), (h.__keydown = [Wn, ft]), t(p);
+			var N = l(p, 2),
+				M = a(N);
+			M.__click = [Yn, de];
+			var q = a(M, !0);
+			t(M);
+			var f = l(M, 2);
+			f.__click = ft;
+			var g = a(f, !0);
+			t(f), t(N), t(v);
+			var y = l(v, 2);
+			(y.__click = [Gn, de]),
+				t(o),
+				C(
+					(k, $, z) => {
+						c(T, k), (M.disabled = e(b)), c(q, $), (f.disabled = e(b)), c(g, z);
+					},
+					[() => dn(), () => ut(), () => Kt()]
+				),
+				dt(
+					h,
+					() => e(pe),
+					(k) => s(pe, k)
+				),
+				x(n, o);
+		};
+		U(kt, (n) => {
+			e(de) && n(ga);
+		});
+	}
+	var At = l(kt, 2);
+	{
+		var ha = (n) => {
+			var o = Zn(),
+				v = a(o),
+				m = a(v),
+				T = a(m, !0);
+			t(m);
+			var p = l(m, 2),
+				h = a(p, !0);
+			t(p);
+			var N = l(p, 2),
+				M = a(N);
+			ct(M), (M.__keydown = [Kn, pt]), t(N);
+			var q = l(N, 2),
+				f = a(q);
+			f.__click = [Vn, ve];
+			var g = a(f, !0);
+			t(f);
+			var y = l(f, 2);
+			y.__click = pt;
+			var k = a(y, !0);
+			t(y), t(q), t(v);
+			var $ = l(v, 2);
+			($.__click = [Xn, ve]),
+				t(o),
+				C(
+					(z, E, j, V) => {
+						c(T, z),
+							c(h, E),
+							(f.disabled = e(b)),
+							c(g, j),
+							(y.disabled = e(b)),
+							c(k, V);
+					},
+					[() => ea(), () => un(), () => ut(), () => Kt()]
+				),
+				dt(
+					M,
+					() => e(xe),
+					(z) => s(xe, z)
+				),
+				x(n, o);
+		};
+		U(At, (n) => {
+			e(ve) && n(ha);
+		});
+	}
+	var ya = l(At, 2);
+	{
+		var wa = (n) => {
+			var o = ro(),
+				v = a(o),
+				m = a(v),
+				T = a(m, !0);
+			t(m);
+			var p = l(m, 2),
+				h = a(p, !0);
+			t(p);
+			var N = l(p, 2),
+				M = a(N),
+				q = a(M),
+				f = a(q, !0);
+			t(q);
+			var g = l(q, 2),
+				y = a(g);
+			y.value = y.__value = "";
+			var k = l(y);
+			it(
+				k,
+				17,
+				() => aa,
+				(P) => P.value,
+				(P, H) => {
+					var A = eo(),
+						ae = a(A, !0);
+					t(A);
+					var O = {};
+					C(() => {
+						c(ae, e(H).label),
+							O !== (O = e(H).value) &&
+								(A.value = (A.__value = e(H).value) ?? "");
+					}),
+						x(P, A);
+				}
+			),
+				t(g),
+				t(M),
+				t(N);
+			var $ = l(N, 2),
+				z = a($);
+			{
+				let P = $e(() => dr()),
+					H = $e(() => (e(ne) === "doxxing" ? 20 : 5));
+				cr(z, {
+					class: "h-24 rounded-lg",
+					name: "notes",
+					get placeholder() {
+						return e(P);
+					},
+					max: 2056,
+					get min() {
+						return e(H);
+					},
+					get value() {
+						return e(ge);
+					},
+					set value(A) {
+						s(ge, A, !0);
+					},
+					get validate() {
+						return e(Ce);
+					},
+					set validate(A) {
+						s(Ce, A, !0);
+					},
+				});
+			}
+			t($);
+			var E = l($, 2),
+				j = a(E);
+			j.__click = [to, re];
+			var V = a(j, !0);
+			t(j);
+			var Y = l(j, 2);
+			Y.__click = [hn, i, ne, Ce, b, ge, ye, re];
+			var oe = a(Y, !0);
+			t(Y), t(E), t(v);
+			var te = l(v, 2);
+			(te.__click = [ao, re]),
+				t(o),
+				C(
+					(P, H, A, ae, O, Ee) => {
+						c(T, P),
+							c(h, H),
+							c(f, A),
+							Qt(g, "aria-label", ae),
+							(j.disabled = e(b)),
+							c(V, O),
+							(Y.disabled = e(b) || !e(ne)),
+							c(oe, Ee);
+					},
+					[
+						() => ta(),
+						() => fn(),
+						() => Yt(),
+						() => Yt(),
+						() => ut(),
+						() => mr(),
+					]
+				),
+				ar(
+					g,
+					() => e(ne),
+					(P) => s(ne, P)
+				),
+				x(n, o);
+		};
+		U(ya, (n) => {
+			e(re) && n(wa);
+		});
+	}
+	t(Se),
+		C(
+			(n, o, v, m, T) => {
+				c(ca, n),
+					Qt(Te, "placeholder", o),
+					(_e.disabled = e(R)),
+					c(da, v),
+					c(va, m),
+					c(_a, T);
+			},
+			[() => Lr(), () => Pr(), () => yr(), () => gr(), () => Dr()]
+		),
+		Va("submit", we, (n) => {
+			n.preventDefault(), bt();
+		}),
+		dt(
+			Te,
+			() => e(_),
+			(n) => s(_, n)
+		),
+		x(d, Se),
+		Xa();
+}
+Ga(["click", "keydown"]);
+export { Ro as component };
