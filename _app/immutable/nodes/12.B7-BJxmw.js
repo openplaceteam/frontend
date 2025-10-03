@@ -347,7 +347,7 @@ var wo = x("<span><!></span>"),
 		'<div class="text-base-content/70 flex h-full items-center justify-center"><!></div>'
 	),
 	pi = x(
-		'<div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-4"><div class="rounded-box bg-base-100 border-base-300 border p-3"><div class="text-base-content/70 text-xs"> </div> <div class="text-xl font-bold"> </div></div> <div class="rounded-box bg-base-100 border-base-300 border p-3"><div class="text-base-content/70 text-xs">Timeouts</div> <div class="text-xl font-bold"> </div></div> <div class="rounded-box bg-base-100 border-base-300 border p-3"><div class="text-base-content/70 text-xs"> </div> <div class="text-xl font-bold"> </div></div> <div class="rounded-box bg-base-100 border-base-300 border p-3"><div class="text-base-content/70 text-xs"> </div> <div class="text-xl font-bold"> </div></div> <div class="rounded-box bg-base-100 border-base-300 border p-3 sm:col-span-2 xl:col-span-1"><div class="text-base-content/70 text-xs">Droplets</div> <div class="flex items-center gap-2"><div class="text-xl font-bold"> </div> <div class="flex items-center gap-2"><input class="input input-bordered input-xs w-24" type="number" placeholder="+/- valor"/> <button class="btn btn-primary btn-xs">Aplicar</button></div></div></div> <div class="rounded-box bg-base-100 border-base-300 border p-3 sm:col-span-2 xl:col-span-1"><div class="text-base-content/70 text-xs"> </div> <div class="text-sm"><div>Email: <b class="text-success"> </b></div> <div>Phone: <b> </b></div> <div>Discord: <b> </b></div></div></div></div> <div class="rounded-box bg-base-100 border-base-300 border p-4 shadow"><div class="mb-2 flex items-center justify-between"><h3 class="text-lg font-semibold"> </h3></div> <div class="mb-3 flex gap-2"><input class="input input-bordered input-sm w-full"/> <button class="btn btn-primary btn-sm"> </button></div> <div class="flex flex-col gap-3"><!> <!></div></div> <div class="rounded-box bg-base-100 border-base-300 border p-4 shadow"><div class="mb-2 flex items-center justify-between"><h3 class="text-lg font-semibold"> </h3> <button class="btn btn-outline btn-sm"><!> </button></div> <div class="max-h-80 overflow-auto"><table class="table-sm table"><thead><tr><th> </th><th class="text-right"> </th><th> </th><th class="text-right"> </th></tr></thead><tbody><!><!></tbody></table></div></div> <!> <div class="rounded-box bg-base-100 border-base-300 border p-4 shadow"><h3 class="mb-3 text-lg font-semibold"> </h3> <div class="tabs tabs-boxed gap-2"><button> </button> <button> </button> <button> </button></div> <div class="bg-base-200 rounded-box mt-3 grid min-h-[420px] grid-cols-1 gap-4 p-3 md:grid-cols-[320px_1fr]"><section class="flex flex-col gap-3 overflow-auto px-1 pb-1"><div class="mb-2 flex items-center justify-between"><div class="flex items-center gap-2"><h3 class="text-lg font-semibold"><!></h3></div> <button class="btn btn-circle btn-sm"><!></button></div> <!> <!> <!> <div class="mt-2 flex justify-end"><button class="btn btn-sm"> </button></div></section> <section class="rounded-box bg-base-100 overflow-auto shadow"><!></section></div></div>',
+		'<div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-4"><div class="rounded-box bg-base-100 border-base-300 border p-3"><div class="text-base-content/70 text-xs"> </div> <div class="text-xl font-bold"> </div></div> <div class="rounded-box bg-base-100 border-base-300 border p-3"><div class="text-base-content/70 text-xs">Timeouts</div> <div class="text-xl font-bold"> </div></div> <div class="rounded-box bg-base-100 border-base-300 border p-3"><div class="text-base-content/70 text-xs"> </div> <div class="text-xl font-bold"> </div></div> <div class="rounded-box bg-base-100 border-base-300 border p-3"><div class="text-base-content/70 text-xs"> </div> <div class="text-xl font-bold"> </div></div> <div class="rounded-box bg-base-100 border-base-300 border p-3 sm:col-span-2 xl:col-span-1"><div class="text-base-content/70 text-xs">Droplets</div> <div class="flex items-center gap-2"><div class="text-xl font-bold"> </div> <div class="flex items-center gap-2"><input class="input input-bordered input-xs w-24" type="number" placeholder="+/- value"/> <button class="btn btn-primary btn-xs">Apply</button></div></div></div> <div class="rounded-box bg-base-100 border-base-300 border p-3 sm:col-span-2 xl:col-span-1"><div class="text-base-content/70 text-xs"> </div> <div class="text-sm"><div>Email: <b class="text-success"> </b></div> <div>Phone: <b> </b></div> <div>Discord: <b> </b></div></div></div></div> <div class="rounded-box bg-base-100 border-base-300 border p-4 shadow"><div class="mb-2 flex items-center justify-between"><h3 class="text-lg font-semibold"> </h3></div> <div class="mb-3 flex gap-2"><input class="input input-bordered input-sm w-full"/> <button class="btn btn-primary btn-sm"> </button></div> <div class="flex flex-col gap-3"><!> <!></div></div> <div class="rounded-box bg-base-100 border-base-300 border p-4 shadow"><div class="mb-2 flex items-center justify-between"><h3 class="text-lg font-semibold"> </h3> <button class="btn btn-outline btn-sm"><!> </button></div> <div class="max-h-80 overflow-auto"><table class="table-sm table"><thead><tr><th> </th><th class="text-right"> </th><th> </th><th class="text-right"> </th></tr></thead><tbody><!><!></tbody></table></div></div> <!> <div class="rounded-box bg-base-100 border-base-300 border p-4 shadow"><h3 class="mb-3 text-lg font-semibold"> </h3> <div class="tabs tabs-boxed gap-2"><button> </button> <button> </button> <button> </button></div> <div class="bg-base-200 rounded-box mt-3 grid min-h-[420px] grid-cols-1 gap-4 p-3 md:grid-cols-[320px_1fr]"><section class="flex flex-col gap-3 overflow-auto px-1 pb-1"><div class="mb-2 flex items-center justify-between"><div class="flex items-center gap-2"><h3 class="text-lg font-semibold"><!></h3></div> <button class="btn btn-circle btn-sm"><!></button></div> <!> <!> <!> <div class="mt-2 flex justify-end"><button class="btn btn-sm"> </button></div></section> <section class="rounded-box bg-base-100 overflow-auto shadow"><!></section></div></div>',
 		1
 	),
 	bi = x(
@@ -383,7 +383,7 @@ function Oi(u, o) {
 	function Aa() {
 		const n = Number(e(ht));
 		if (!Number.isFinite(n) || n === 0) {
-			oe.error("Informe um número diferente de 0");
+			oe.error("Enter a number other than 0.");
 			return;
 		}
 		zr(n), _(ht, "");
@@ -448,9 +448,9 @@ function Oi(u, o) {
 					!e(Te) && e(De).length > 0 && _(Te, e(De)[0], !0),
 					Je.add(n);
 			} catch (g) {
-				console.error("Erro ao carregar mini moderation", n, g),
+				console.error("Error loading mini moderation", n, g),
 					oe.error(
-						(g == null ? void 0 : g.message) ?? "Falha ao carregar tickets"
+						(g == null ? void 0 : g.message) ?? "Failed to load tickets"
 					);
 			} finally {
 				_(Me, !1);
@@ -483,7 +483,7 @@ function Oi(u, o) {
 					!0
 				);
 			} catch (b) {
-				console.error("Erro ao carregar compras", b), _(Be, [], !0), _(Ot, !1);
+				console.error("Error loading purchases", b), _(Be, [], !0), _(Ot, !1);
 			}
 			if ((_(P, null), n.role !== "user"))
 				try {
@@ -494,7 +494,7 @@ function Oi(u, o) {
 				}
 			await qe("received", !0);
 		} catch (n) {
-			_(Y, (n == null ? void 0 : n.message) ?? "Erro ao carregar usuário", !0);
+			_(Y, (n == null ? void 0 : n.message) ?? "Error loading user", !0);
 		} finally {
 			_(z, !1);
 		}
@@ -502,7 +502,7 @@ function Oi(u, o) {
 	async function za() {
 		const n = Number(e(c).trim());
 		if (!n || isNaN(n)) {
-			oe.error("Informe um ID numérico por enquanto");
+			oe.error("Enter a numeric user ID");
 			return;
 		}
 		Es(`/admin/users?id=${n}`);
@@ -512,7 +512,7 @@ function Oi(u, o) {
 			(await ge.postSetUserDroplets(e(l).id, n),
 			(e(l).droplets = Math.max(0, (e(l).droplets ?? 0) + n)),
 			Sa(
-				`Droplets ${n >= 0 ? "+" : "-"}${Math.abs(n)}, agora ${e(l).droplets}`
+				`${n >= 0 ? "Added" : "Removed"}${Math.abs(n)} Droplets, now ${e(l).droplets}`
 			));
 	}
 	async function Sr() {
@@ -521,7 +521,7 @@ function Oi(u, o) {
 				const n = await ge.getUserNotes(e(l).id);
 				_(V, n.notes, !0);
 			} catch (n) {
-				console.error("Erro ao carregar notas", n), _(V, [], !0);
+				console.error("Error loading notes", n), _(V, [], !0);
 			}
 	}
 	async function Sa(n) {
@@ -532,15 +532,15 @@ function Oi(u, o) {
 				_(z, !0),
 					await ge.addUserNote(e(l).id, b),
 					(n = ""),
-					oe.success("Nota adicionada");
+					oe.success("Note added");
 				try {
 					const g = await ge.getUserNotes(e(l).id);
 					_(V, g.notes, !0);
 				} catch (g) {
-					console.error("Erro ao recarregar notas", g);
+					console.error("Error reloading notes", g);
 				}
 			} catch (g) {
-				oe.error((g == null ? void 0 : g.message) ?? "Falha ao adicionar nota");
+				oe.error((g == null ? void 0 : g.message) ?? "Failed to add note");
 			} finally {
 				_(z, !1);
 			}
