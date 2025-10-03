@@ -328,7 +328,7 @@ function pe(a, e) {
 					},
 					[
 						() => "/login",
-						() => Q({ name: "account" }),
+						() => Q({ name: "openplace" }),
 						// () => (v(r) ? _("twitch", v(r)) : "#"),
 						// () => Q({ name: "Twitch" }),
 					]
