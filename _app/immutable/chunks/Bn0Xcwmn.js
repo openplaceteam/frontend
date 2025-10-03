@@ -272,12 +272,12 @@ function pe(a, e) {
 			var i = je(),
 				l = X(i),
 				o = d(l);
-			Ke(o, { class: "mr-1 size-5" });
+			// Ke(o, { class: "mr-1 size-5" });
 			var H = u(o);
 			f(l);
 			var I = u(l, 2),
 				Y = d(I);
-			Ue(Y, { class: "mr-1 size-5" });
+			// Ue(Y, { class: "mr-1 size-5" });
 			var re = u(Y);
 			f(I);
 			var q = u(I, 2),
@@ -314,23 +314,23 @@ function pe(a, e) {
 							})
 						),
 							Z(l, "href", h),
-							y(H, ` ${N ?? ""}`),
-							A(
-								I,
-								1,
-								G({
-									"btn btn-lg bg-base-100 w-full text-base": !0,
-									"bg-base-content/10 pointer-events-none": !v(r),
-								})
-							),
-							Z(I, "href", K),
-							y(re, ` ${ie ?? ""}`);
+							y(H, ` ${N ?? ""}`);
+							// A(
+							// 	I,
+							// 	1,
+							// 	G({
+							// 		"btn btn-lg bg-base-100 w-full text-base": !0,
+							// 		"bg-base-content/10 pointer-events-none": !v(r),
+							// 	})
+							// ),
+							// Z(I, "href", K),
+							// y(re, ` ${ie ?? ""}`);
 					},
 					[
-						() => (v(r) ? _("google", v(r)) : "#"),
-						() => Q({ name: "Google" }),
-						() => (v(r) ? _("twitch", v(r)) : "#"),
-						() => Q({ name: "Twitch" }),
+						() => "/login",
+						() => Q({ name: "account" }),
+						// () => (v(r) ? _("twitch", v(r)) : "#"),
+						// () => Q({ name: "Twitch" }),
 					]
 				),
 				w(t, i);
