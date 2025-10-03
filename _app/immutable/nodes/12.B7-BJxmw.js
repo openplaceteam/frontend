@@ -220,9 +220,9 @@ async function ho(u, o, c) {
 			_(c, !0),
 				await ge.removeBan(e(o).id),
 				(e(o).ban_reason = null),
-				oe.success("Ban removido");
+				oe.success("Ban removed");
 		} catch (y) {
-			oe.error((y == null ? void 0 : y.message) ?? "Falha ao remover ban");
+			oe.error((y == null ? void 0 : y.message) ?? "Failed to remove ban");
 		} finally {
 			_(c, !1);
 		}
@@ -233,9 +233,9 @@ async function yo(u, o, c) {
 			_(c, !0),
 				await ge.removeTimeout(e(o).id),
 				(e(o).timeout_until = null),
-				oe.success("Timeout removido");
+				oe.success("Timeout removed");
 		} catch (y) {
-			oe.error((y == null ? void 0 : y.message) ?? "Falha ao remover timeout");
+			oe.error((y == null ? void 0 : y.message) ?? "Failed to remove timeout");
 		} finally {
 			_(c, !1);
 		}
@@ -512,7 +512,7 @@ function Oi(u, o) {
 			(await ge.postSetUserDroplets(e(l).id, n),
 			(e(l).droplets = Math.max(0, (e(l).droplets ?? 0) + n)),
 			Sa(
-				`${n >= 0 ? "Added" : "Removed"}${Math.abs(n)} Droplets, now ${e(l).droplets}`
+				`${n >= 0 ? "Added " : "Removed "}${Math.abs(n)} Droplets, now ${e(l).droplets}`
 			));
 	}
 	async function Sr() {
