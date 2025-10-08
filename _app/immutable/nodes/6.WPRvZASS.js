@@ -52,7 +52,7 @@ try {
 				"sentry-dbid-72a55a37-b288-4457-b985-9193a3894d7c"));
 	})();
 } catch {}
-const x = () => "Admin dashboard content",
+const x = () => "Loading dashboard..",
 	v = () => "Conteúdo do painel de administração",
 	D = (e = {}, o = {}) => ((o.locale ?? _()) === "en" ? x() : v());
 var E = f(
@@ -61,7 +61,7 @@ var E = f(
 function M(e, o) {
 	c(o, !1),
 		i(() => {
-			w("/admin/dashboard");
+			w("/admin");
 		}),
 		y();
 	var t = E();
