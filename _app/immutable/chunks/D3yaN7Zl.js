@@ -128,7 +128,7 @@ function co(e, o) {
 	Fe(o, !0);
 	var r = lo(),
 		t = de(r);
-	so(t, () => Be(o.userId.toString(), 95, 45)),
+	so(t, () => Be(String(o.userId ?? ""), 95, 45)),
 		me(r),
 		pe(() => fe(r, 1, `bg-base-200 minidenticon ${o.class ?? "" ?? ""}`)),
 		ue(e, r),
