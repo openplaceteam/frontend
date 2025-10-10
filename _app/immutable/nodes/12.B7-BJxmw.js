@@ -1674,7 +1674,7 @@ function Oi(u, o) {
 										},
 										[
 											() => rn(),
-											() => e(p).id.split("-").at(-1),
+											() => String(e(p).id).split("-").at(-1),
 											() => sn(),
 											() => Ct(e(p).reportedUser.id),
 											() => nn({ userId: e(p).reportedUser.id }),
