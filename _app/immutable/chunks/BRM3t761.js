@@ -945,7 +945,7 @@ class zn {
 				this.channel.postMessage(
 					JSON.stringify({ type: "refresh", data: this.data })
 				),
-				Te("userId", { id: this.data.id }),
+				Te("userId", { id: this.data?.id }),
 				!0
 			);
 		} catch (e) {
