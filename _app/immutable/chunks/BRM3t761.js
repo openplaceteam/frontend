@@ -938,6 +938,7 @@ class zn {
 	}
 	async refresh() {
 		try {
+			var e;
 			return (
 				(this.loading = !0),
 				(this.data = await de.me()),
@@ -945,8 +946,9 @@ class zn {
 				this.channel.postMessage(
 					JSON.stringify({ type: "refresh", data: this.data })
 				),
-				Te("userId", { id: this.data.id }),
-				!0
+				(e = this.data) != null && e.id &&
+				Te("userId", { id: e.id }),
+				!!this.data
 			);
 		} catch (e) {
 			return console.error(e), ge.warning(Ft(), { duration: 1e4 }), !1;
