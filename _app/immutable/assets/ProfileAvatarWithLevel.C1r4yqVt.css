@@ -1,0 +1,9 @@
+.level-fill.svelte-12f880g {
+  --angle: 180deg;
+  --color: black;
+  background: conic-gradient(
+    var(--color),
+    var(--color) var(--angle),
+    transparent calc(var(--angle) + 3deg)
+  );
+}
