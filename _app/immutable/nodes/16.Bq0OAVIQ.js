@@ -139,7 +139,7 @@ function ea(a, e) {
     ue(4),
       y(
         (D) => {
-          ce.title = `Wplace - ${D ?? ""}`;
+          ce.title = `openplace - ${D ?? ""}`;
         },
         [() => Te()],
         void 0,

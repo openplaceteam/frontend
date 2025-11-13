@@ -54931,7 +54931,7 @@ function fk(_, o) {
             le(nt, ` ${yt ?? ""}`),
               le(Ke, ` ${mt ?? ""}`),
               gr(Fe, "href", y(L)),
-              gr(Fe, "download", `wplace_${ct ?? ""}.png`),
+              gr(Fe, "download", `openplace_${ct ?? ""}.png`),
               le(lt, ` ${qt ?? ""}`);
           },
           [
@@ -55262,7 +55262,7 @@ var Dk = me(
   ),
   Bk = me(' <kbd class="kbd kbd-sm"> </kbd> <!>', 1),
   Ok = me(
-    '<div class="flex h-full flex-col gap-5"><section class="mb-2 flex flex-col items-center justify-center gap-2"><!> <div class="text-center text-sm max-sm:mt-1"> <a class="link" href="https://maplibre.org/" target="_blank">MapLibre</a> | <a class="link" href="https://openfreemap.org/" target="_blank">OpenFreeMap</a> <a class="link" href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a></div> <div class="w-full text-center text-sm"><p><a href="https://discord.gg/wplacelive" target="_blank" class="text-nowrap"><!> <span class="link">Discord</span></a> <span class="mx-0.5">|</span> <a href="https://www.reddit.com/r/WplaceLive/" target="_blank" class="text-nowrap"><!> <span class="link">Reddit</span></a> <span class="mx-0.5">|</span> <a href="https://www.instagram.com/wplace.live/" target="_blank" class="text-nowrap"><!> <span class="link">Instagram</span></a> <span class="mx-0.5">|</span> <a href="https://www.youtube.com/@WplaceLive" target="_blank" class="text-nowrap"><!> <span class="link">Youtube</span></a> <span class="mx-0.5">|</span> <a href="https://www.tiktok.com/@wplace5" target="_blank" class="text-nowrap"><!> <span class="link">Tiktok</span></a></p></div></section> <section><h3 class="text-lg font-semibold"> </h3> <iframe class="mt-1 aspect-video w-full bg-black" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></section> <section><h3 class="text-lg font-semibold"> </h3> <p class="not-touchscreen:hidden text-sm"> <button class="btn btn-square shadow-md"><!></button> </p> <p class="touchscreen:hidden text-sm"> <span class="kbd kbd-xs text-base-content rounded-md"> </span> </p></section> <section><h3 class="text-lg font-semibold"> </h3> <p class="text-sm"><!></p></section> <section><!></section> <div class="grow"></div> <section class="text-base-content/80 w-full text-center text-sm max-sm:pb-4"><span>Email: <a class="link" href="mailto:contact@wplace.live">contact@wplace.live</a></span> · <a class="link" target="_blank"> </a> · <a class="link" target="_blank"> </a> · <a class="link" target="_blank"> </a> · <a class="link" href="https://forms.gle/tpDWwewuK5i9C52s8" target="_blank"> </a> · <a class="link" href="https://forms.gle/EVG7A1ZoSyJWAjX96" target="_blank"> </a> · <a class="link" href="https://forms.gle/uinGA5Gj4SpPYa2R6" target="_blank"> </a></section></div>'
+    '<div class="flex h-full flex-col gap-5"><section class="mb-2 flex flex-col items-center justify-center gap-2"><!> <div class="text-center text-sm max-sm:mt-1"> <a class="link" href="https://maplibre.org/" target="_blank">MapLibre</a> | <a class="link" href="https://openfreemap.org/" target="_blank">OpenFreeMap</a> <a class="link" href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a></div> <div class="w-full text-center text-sm"><p><a href="https://discord.gg/ZRC4DnP9Z2" target="_blank" class="text-nowrap"><!> <span class="link">Discord</span></a> <span class="mx-0.5">|</span> <a href="https://www.reddit.com/r/WplaceLive/" target="_blank" class="text-nowrap"><!> <span class="link">Reddit</span></a> <span class="mx-0.5">|</span> <a href="https://www.instagram.com/wplace.live/" target="_blank" class="text-nowrap"><!> <span class="link">Instagram</span></a> <span class="mx-0.5">|</span> <a href="https://www.youtube.com/@WplaceLive" target="_blank" class="text-nowrap"><!> <span class="link">Youtube</span></a> <span class="mx-0.5">|</span> <a href="https://www.tiktok.com/@wplace5" target="_blank" class="text-nowrap"><!> <span class="link">Tiktok</span></a></p></div></section> <section><h3 class="text-lg font-semibold"> </h3> <iframe class="mt-1 aspect-video w-full bg-black" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></section> <section><h3 class="text-lg font-semibold"> </h3> <p class="not-touchscreen:hidden text-sm"> <button class="btn btn-square shadow-md"><!></button> </p> <p class="touchscreen:hidden text-sm"> <span class="kbd kbd-xs text-base-content rounded-md"> </span> </p></section> <section><h3 class="text-lg font-semibold"> </h3> <p class="text-sm"><!></p></section> <section><!></section> <div class="grow"></div> <section class="text-base-content/80 w-full text-center text-sm max-sm:pb-4"><span>Email: <a class="link" href="mailto:contact@wplace.live">contact@wplace.live</a></span> · <a class="link" target="_blank"> </a> · <a class="link" target="_blank"> </a> · <a class="link" target="_blank"> </a> · <a class="link" href="https://forms.gle/tpDWwewuK5i9C52s8" target="_blank"> </a> · <a class="link" href="https://forms.gle/EVG7A1ZoSyJWAjX96" target="_blank"> </a> · <a class="link" href="https://forms.gle/uinGA5Gj4SpPYa2R6" target="_blank"> </a></section></div>'
   ),
   Nk = me(
     '<dialog class="modal"><div class="modal-box sm:max-h-11/12 max-sm:size-full max-sm:rounded-none max-sm:px-4 sm:max-w-5xl"><form method="dialog"><button class="btn btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog>'
@@ -68810,7 +68810,7 @@ var dF = me('<span class="tooltip font-flag ml-0.5"> </span>'),
     1
   ),
   PF = me(
-    '<div class="dropdown"><div tabindex="0" role="button"><!> <!></div> <div class="dropdown-content menu bg-base-100 rounded-box border-base-300 z-1 right-1 w-[min(100vw-24px,400px)] translate-y-2 border p-4 shadow-md" tabindex="-1"><button class="btn btn-ghost btn-circle absolute right-2 top-2"><!></button> <section class="flex gap-2"><div class="relative"><!> <button class="btn btn-circle btn-sm absolute -bottom-1 -right-1"><!></button></div> <div><div class="flex items-center gap-1.5 pr-8 text-lg font-medium"><h3 class="line-clamp-1 text-ellipsis text-lg"> </h3> <span> </span> <!> <!></div> <div class="flex items-center gap-1"><!> <span> <span class="text-primary font-semibold"> </span></span></div> <div class="flex items-center gap-1"><!> <span class="text-secondary"><span class="font-semibold"> </span> <button class="tooltip"><!></button></span></div></div></section> <section class="mt-3 flex flex-col gap-2"><!> <div class="mb-1 flex items-center justify-between"><h3 class="text-lg font-semibold"> </h3> <div class="flex items-center gap-2"><div class="dropdown dropdown-end"><div tabindex="0" role="button" class="btn btn-sm btn-circle tooltip"><!></div> <ul tabindex="0" class="dropdown-content menu bg-base-100 z-1 w-max rounded-xl p-2 shadow-sm"></ul></div> <div class="tooltip"><button class="btn btn-sm btn-circle"><!></button></div> <!> <!> <button class="btn btn-sm btn-circle tooltip relative before:-left-1/2"><!> <!></button></div></div>  <!> <!> <!> <!> <a class="btn w-full" href="https://www.twitch.tv/directory/category/wplace" target="_blank"><!> </a> <a class="btn w-full" href="http://discord.gg/wplacelive" target="_blank"><!> Discord</a> <a class="btn w-full" href="https://www.reddit.com/r/WplaceLive/" target="_blank"><!> Reddit</a> <!> <button class="btn"><!> </button></section></div></div> <!>',
+    '<div class="dropdown"><div tabindex="0" role="button"><!> <!></div> <div class="dropdown-content menu bg-base-100 rounded-box border-base-300 z-1 right-1 w-[min(100vw-24px,400px)] translate-y-2 border p-4 shadow-md" tabindex="-1"><button class="btn btn-ghost btn-circle absolute right-2 top-2"><!></button> <section class="flex gap-2"><div class="relative"><!> <button class="btn btn-circle btn-sm absolute -bottom-1 -right-1"><!></button></div> <div><div class="flex items-center gap-1.5 pr-8 text-lg font-medium"><h3 class="line-clamp-1 text-ellipsis text-lg"> </h3> <span> </span> <!> <!></div> <div class="flex items-center gap-1"><!> <span> <span class="text-primary font-semibold"> </span></span></div> <div class="flex items-center gap-1"><!> <span class="text-secondary"><span class="font-semibold"> </span> <button class="tooltip"><!></button></span></div></div></section> <section class="mt-3 flex flex-col gap-2"><!> <div class="mb-1 flex items-center justify-between"><h3 class="text-lg font-semibold"> </h3> <div class="flex items-center gap-2"><div class="dropdown dropdown-end"><div tabindex="0" role="button" class="btn btn-sm btn-circle tooltip"><!></div> <ul tabindex="0" class="dropdown-content menu bg-base-100 z-1 w-max rounded-xl p-2 shadow-sm"></ul></div> <div class="tooltip"><button class="btn btn-sm btn-circle"><!></button></div> <!> <!> <button class="btn btn-sm btn-circle tooltip relative before:-left-1/2"><!> <!></button></div></div>  <!> <!> <!> <!> <a class="btn w-full" href="https://www.twitch.tv/directory/category/wplace" target="_blank"><!> </a> <a class="btn w-full" href="https://discord.gg/ZRC4DnP9Z2" target="_blank"><!> Discord</a> <a class="btn w-full" href="https://www.reddit.com/r/WplaceLive/" target="_blank"><!> Reddit</a> <!> <button class="btn"><!> </button></section></div></div> <!>',
     1
   );
 function IF(_, o) {
@@ -69253,7 +69253,7 @@ function IF(_, o) {
           P(gt),
             Ne(
               (wt) => {
-                gr(gt, "href", `${di.url.origin ?? ""}/admin/dashboard`),
+                gr(gt, "href", `${di.url.origin ?? ""}/admin`),
                   le(br, ` ${wt ?? ""}`);
               },
               [() => WI()]
@@ -69974,7 +69974,7 @@ function VF(_, o) {
 }
 async function qF(_) {
   const o = ze();
-  let f = `https://geocoding.wplace.live/v1/autocomplete?text=${encodeURIComponent(
+  let f = `/v1/autocomplete?text=${encodeURIComponent(
     _
   )}${o === "pt" ? "&lang=pt" : ""}`;
   const x = await fetch(f);
@@ -73138,7 +73138,7 @@ function RB(_, o) {
   return Math.round(_ * f) / f;
 }
 var FB = me(
-    '<meta property="og:title" content="Wplace - A massive real-time pixel art canvas on the world map!"/> <meta name="twitter:title" content="Wplace - A massive real-time pixel art canvas on the world map!"/> <meta name="robots" content="index, follow, max-image-preview:large"/> <meta name="color-scheme" content="light only"/>',
+    '<meta property="og:title" content="openplace - A massive real-time pixel art canvas on the world map!"/> <meta name="twitter:title" content="openplace - A massive real-time pixel art canvas on the world map!"/> <meta name="robots" content="index, follow, max-image-preview:large"/> <meta name="color-scheme" content="light only"/>',
     1
   ),
   BB = me("<button><!></button>"),
@@ -73255,7 +73255,7 @@ function QO(_, o) {
       }
     );
   function Y(vt) {
-    return `https://maps.wplace.live/styles/${
+    return `/styles/${
       vt === "custom-winter" ? "liberty" : "fiord"
     }`;
   }
@@ -73718,7 +73718,7 @@ function QO(_, o) {
       var Kt = FB();
       yn(6),
         ab(() => {
-          ob.title = "Wplace - Paint the world";
+          ob.title = "openplace - Paint the world";
         }),
         G(vt, Kt);
     });
@@ -73844,7 +73844,7 @@ function QO(_, o) {
                             "href",
                             ((pn = kt.data) == null ? void 0 : pn.role) ===
                               "admin"
-                              ? `${di.url.origin}/admin/dashboard`
+                              ? `${di.url.origin}/admin`
                               : `${di.url.origin}/moderation`
                           ),
                             le(sn, qn);

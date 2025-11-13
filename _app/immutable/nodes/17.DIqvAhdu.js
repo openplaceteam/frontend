@@ -177,7 +177,7 @@ var vr = y("<span><!></span>"),
   fr = y('<span class="loading loading-spinner loading-md"></span>'),
   br = y("<button> <!></button>"),
   mr = y(
-    '<span class="tooltip tooltip-bottom badge bg-green-600 text-green-100" data-tip="User has spent money on Wplace">💰 PAID</span>'
+    '<span class="tooltip tooltip-bottom badge bg-green-600 text-green-100" data-tip="User has spent money on openplace">💰 PAID</span>'
   ),
   gr = y(
     '<span> <span class="font-semibold"> </span></span> <span> <span class="font-semibold"> </span></span>',
@@ -382,7 +382,7 @@ function to(w, u) {
   var xt = Ir();
   ys("1cfidl9", (n) => {
     bs(() => {
-      ms.title = "Wplace - Moderation";
+      ms.title = "openplace - Moderation";
     });
   });
   var Se = te(xt),

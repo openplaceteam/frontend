@@ -42,7 +42,7 @@ try {
 function l(e) {
   f("1dwfpnq", (n) => {
     o(() => {
-      d.title = "Wplace - Admin - Mods Dashboard";
+      d.title = "openplace - Admin - Mods Dashboard";
     });
   });
 }

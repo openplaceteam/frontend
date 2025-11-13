@@ -57,7 +57,7 @@ function v(e) {
   var a = f();
   c("17oe413", (p) => {
     n(() => {
-      d.title = "Wplace - Refund Policy";
+      d.title = "openplace - Refund Policy";
     });
   });
   var i = s(a),

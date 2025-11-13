@@ -59,7 +59,7 @@ function w(o) {
   var e = p();
   m("1lmoz7w", (f) => {
     t(() => {
-      n.title = "Wplace - Política de Reembolso";
+      n.title = "openplace - Política de Reembolso";
     });
   });
   var a = s(e),

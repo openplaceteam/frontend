@@ -119,7 +119,7 @@ function za(a, o) {
   var $ = ha();
   Z("1i7v6zb", (s) => {
     Q(() => {
-      X.title = "Wplace - Twitch account migration";
+      X.title = "openplace - Twitch account migration";
     });
   });
   var Y = e($);

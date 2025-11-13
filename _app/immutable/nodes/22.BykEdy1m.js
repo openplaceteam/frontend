@@ -1088,7 +1088,7 @@ function f(s) {
   var e = h();
   i("1xhxrlv", (p) => {
     r(() => {
-      v.title = "Wplace - Privacy Policy";
+      v.title = "openplace - Privacy Policy";
     });
   });
   var l = t(e),

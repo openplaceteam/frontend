@@ -256,7 +256,7 @@ function jr(b, p) {
   var F = vr();
   Ce("11knr4c", (a) => {
     Ne(() => {
-      Oe.title = "Wplace - Admin - Reports - Leaderboard";
+      Oe.title = "openplace - Admin - Reports - Leaderboard";
     });
   });
   var P = t(F),

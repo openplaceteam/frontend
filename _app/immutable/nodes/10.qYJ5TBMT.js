@@ -199,7 +199,7 @@ function _a(b, T) {
   var tt = qe();
   Te("1w6l7vk", (o) => {
     Ue(() => {
-      Ae.title = "Wplace - Admin - Audit Logs";
+      Ae.title = "openplace - Admin - Audit Logs";
     });
   });
   var et = r(e(tt), 2),

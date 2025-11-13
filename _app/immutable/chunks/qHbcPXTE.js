@@ -48,9 +48,9 @@ try {
   })();
 } catch {}
 const S =
-  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var B = c("<span>wplace</span>"),
-  L = c('<div><img alt="Wplace logo"/> <!></div>');
+  "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAADqADAAQAAAABAAAADgAAAAC98Dn6AAAAlklEQVQoFWNkwA7+owkzovEZ0AXAGhwzH6Ko2z9dHsaHq4czgDL/0TXAVMNoqAFgPTCNBDWha2aCCZBKg2wk2jaY4SAns8A4z5/vhTHBtKSkMwofnQPXCFIY6SEFll++4xm6Ogw+XCNIhhgNMBMGJlRhtv/XDtoHY2Olr65zAomjJACYQnCSQzcAqgGuCYUB0wmlCSZyAMUpJtMVXyyIAAAAAElFTkSuQmCC";
+var B = c("<span>openplace</span>"),
+  L = c('<div><img alt=""/> <!></div>');
 function z(e, t) {
   b(t, !0);
   let a = E(t, "size", 3, "default"),

@@ -886,7 +886,7 @@ class Rn {
           Z.getNotificationCount().then((t) => {
             this.notificiationCount = t;
           }),
-        (e = this.data) != null && e.id && _e("userId", { id: this.data.id }),
+        (e = this.data) != null && e.id && _e("userId", { id: E.id }),
         !!this.data
       );
     } catch (t) {

@@ -547,7 +547,7 @@ function Hi(w, _) {
   var Kt = mi();
   en("1p497kv", (s) => {
     Ys(() => {
-      Zs.title = "Wplace - Admin - Users";
+      Zs.title = "openplace - Admin - Users";
     });
   });
   var Qt = a(Kt),

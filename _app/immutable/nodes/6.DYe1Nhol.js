@@ -53,7 +53,7 @@ try {
         "sentry-dbid-e3439a1d-4bd9-4af1-8b9a-e5a20a3b39e3"));
   })();
 } catch {}
-const v = () => "Admin dashboard content",
+const v = () => "Loading dashboard..",
   D = () => "Conteúdo do painel de administração",
   E = (e = {}, o = {}) => ((o.locale ?? w()) === "en" ? v() : D());
 var I = l(
@@ -68,7 +68,7 @@ function M(e, o) {
   var t = I();
   y("1jef3w8", (n) => {
     m(() => {
-      h.title = "Wplace - Admin Dashboard";
+      h.title = "openplace - Admin Dashboard";
     });
   });
   var a = u(s(t), 2),

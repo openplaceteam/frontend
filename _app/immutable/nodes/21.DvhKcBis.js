@@ -189,7 +189,7 @@ function J(e, r) {
   var h = G();
   B("bnihef", (o) => {
     T(() => {
-      C.title = "Wplace - Code of Conduct";
+      C.title = "openplace - Code of Conduct";
     });
   });
   var m = a(h),

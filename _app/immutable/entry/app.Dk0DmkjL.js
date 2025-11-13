@@ -6029,7 +6029,7 @@ function Mf(t) {
   return e ? e >= 400 && e < 500 : !1;
 }
 Pf({
-  dsn: "https://ef9fc09cd53942366f18dbc146ea7350@o4509998160805888.ingest.us.sentry.io/4509998167687168",
+  dsn: "",
   tracesSampleRate: 1,
   enableLogs: !0,
   environment: "prod",

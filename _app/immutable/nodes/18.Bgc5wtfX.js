@@ -67,7 +67,7 @@ function K(e, t) {
   $("swcdds", (p) => {
     u(
       (c) => {
-        T.title = `Wplace - ${c ?? ""}`;
+        T.title = `openplace - ${c ?? ""}`;
       },
       [() => b()],
       void 0,

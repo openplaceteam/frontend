@@ -381,7 +381,7 @@ function Ds(_, c) {
   var Tt = ls();
   Ja("169czl3", (e) => {
     Ya(() => {
-      Fa.title = "Wplace - Admin Dashboard";
+      Fa.title = "openplace - Admin Dashboard";
     });
   });
   var Le = L(Tt),

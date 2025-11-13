@@ -47,10 +47,10 @@ try {
         "sentry-dbid-1a93429f-fa28-46f4-880b-703f42d023d7"));
   })();
 } catch {}
-const L = "true",
-  S = "https://backend.wplace.live/files",
+const L = "false",
+  S = "/files",
   v = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  A = "https://backend.wplace.live",
+  A = "",
   p = "theme";
 var l, g, u, d, f, h, c;
 class y {

@@ -83,7 +83,7 @@ function ee(e, o) {
   var n = C();
   z("1hh8w3l", (t) => {
     D(() => {
-      A.title = "Wplace - Admin - Mods";
+      A.title = "openplace - Admin - Mods";
     });
   });
   var l = d(n),
