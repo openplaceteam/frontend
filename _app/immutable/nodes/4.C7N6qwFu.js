@@ -73255,7 +73255,7 @@ function QO(_, o) {
       }
     );
   function Y(vt) {
-    return `/styles/${
+    return `/maps/styles/${
       vt === "custom-winter" ? "liberty" : "fiord"
     }`;
   }
