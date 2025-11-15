@@ -84,8 +84,8 @@ function ge(a, e, n) {
 const he = (a) => `Login with ${a.name}`,
   ye = (a) => `Entrar com ${a.name}`,
   we = (a, e = {}) => ((e.locale ?? h()) === "en" ? he(a) : ye(a)),
-  xe = () => "By continuing, you agree to our",
-  ke = () => "Ao continuar, você concorda com nossos",
+  xe = () => "By signing in, you agree to the rules set by the owner of this instance.",
+  ke = () => "",
   Ie = (a = {}, e = {}) => ((e.locale ?? h()) === "en" ? xe() : ke()),
   Ce = () => "Terms of Service",
   Le = () => "Termos de Serviço",
@@ -240,6 +240,7 @@ function He(a, e) {
   ue(r, () => ({
     viewBox: "0 0 256 262",
     xmlns: "http://www.w3.org/2000/svg",
+		style: "display: none;",
     ...n,
   })),
     I(a, r);
@@ -252,14 +253,14 @@ var Oe = R(
     '<p class="text-base-content/60 mt-8 text-center text-xs"> <a class="font-medium"> </a>.</p>'
   ),
   Je = R(
-    '<div><div class="flex justify-center py-4"><!></div> <div class="flex flex-col items-center gap-2 pt-6"><!></div> <p class="text-base-content/60 mt-2 text-center text-xs"> <a class="font-medium" href="/terms/terms-of-service" target="_blank"> </a>, <a class="font-medium" href="/terms/privacy" target="_blank"> </a> <a class="font-medium" href="/terms/code-of-conduct" target="_blank"> </a>.</p> <!></div>'
+    '<div><div class="flex justify-center py-4"><!></div> <div class="flex flex-col items-center gap-2 pt-6"><!></div> <p class="text-base-content/60 mt-2 text-center text-xs"> <a class="font-medium" href="/terms/terms-of-service" target="_blank"> </a> <a class="font-medium" href="/terms/privacy" target="_blank"> </a> <a class="font-medium" href="/terms/code-of-conduct" target="_blank"> </a> </p> <!></div>'
   );
 function ct(a, e) {
   J(e, !0);
   let n = s(e, "showTwitchMigration", 3, !0),
     r = Q(de(V ? "" : "turnstile-disabled"));
   function y(c, i) {
-    return `${_e}/auth/${c}?token=${i}${e.redirect ? `&r=${e.redirect}` : ""}`;
+    return `${_e}/login${e.redirect ? `r=${e.redirect}` : ""}`;
   }
   var m = Je(),
     _ = d(m),
@@ -311,7 +312,7 @@ function ct(a, e) {
               O(v, "href", x),
               g(M, ` ${W ?? ""}`);
           },
-          [() => (k(r) ? y("google", k(r)) : "#"), () => we({ name: "Google" })]
+          [() => (k(r) ? y("", k(r)) : "#"), () => we({ name: "openplace" })]
         ),
         I(c, i);
     };
@@ -341,14 +342,14 @@ function ct(a, e) {
         M = d(b, !0);
       u(b),
         H(),
-        u(i),
-        K(
-          (N, z, G) => {
-            g(v, `${N ?? ""} `), O(b, "href", z), g(M, G);
-          },
-          [() => ze(), () => y("twitch", ""), () => Ue()]
-        ),
-        I(c, i);
+        u(i);
+        // K(
+        //   (N, z, G) => {
+        //     g(v, `${N ?? ""} `), O(b, "href", z), g(M, G);
+        //   },
+        //   [() => ze(), () => y("twitch", ""), () => Ue()]
+        // ),
+        // I(c, i);
     };
     B(l, (c) => {
       n() && c(o);
@@ -357,7 +358,7 @@ function ct(a, e) {
   u(m),
     K(
       (c, i, v, b, M) => {
-        g(A, `${c ?? ""} `), g(T, i), g(F, v), g(P, ` ${b ?? ""} `), g(t, M);
+        g(A, `${c ?? ""} `);//, g(T, i), g(F, v), g(P, ` ${b ?? ""} `), g(t, M);
       },
       [() => Ie(), () => Ee(), () => Pe(), () => Be(), () => Ge()]
     ),
