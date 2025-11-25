@@ -565,7 +565,7 @@ const Qb = () => "Log in",
     "✅ Desenhar sobre outras artes para complementar ou criar novas artes é permitido",
   n3 = (_ = {}, o = {}) => ((o.locale ?? ze()) === "en" ? t3() : r3()),
   i3 = () =>
-    "✅ Griefing political party flags or portraits of politicians is allowed",
+    "✅ All political artwork is allowed to be griefed.",
   a3 = () =>
     "✅ Desenhar sobre bandeiras de partidos e retratos de políticos é permitido",
   o3 = (_ = {}, o = {}) => ((o.locale ?? ze()) === "en" ? i3() : a3()),
