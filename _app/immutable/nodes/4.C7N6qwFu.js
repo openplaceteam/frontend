@@ -565,9 +565,9 @@ const Qb = () => "Log in",
     "✅ Desenhar sobre outras artes para complementar ou criar novas artes é permitido",
   n3 = (_ = {}, o = {}) => ((o.locale ?? ze()) === "en" ? t3() : r3()),
   i3 = () =>
-    "✅ Griefing political party flags or portraits of politicians is allowed",
+    "🛜 Use of VPNs or proxies is not allowed",
   a3 = () =>
-    "✅ Desenhar sobre bandeiras de partidos e retratos de políticos é permitido",
+    "🛜 Use of VPNs or proxies is not allowed",
   o3 = (_ = {}, o = {}) => ((o.locale ?? ze()) === "en" ? i3() : a3()),
   s3 = () =>
     "Violations of these rules may lead to suspension of your account or removal of drawings.",
