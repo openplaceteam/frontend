@@ -942,7 +942,7 @@ function ga(a, e) {
 }
 const jn = [{ tileSize: 1e3, zoom: 11 }],
   Jn = 4,
-  Fn = 6e3,
+  Fn = 10e3,
   Kn = [
     { name: "Transparent", rgb: [0, 0, 0] },
     { name: "Black", rgb: [0, 0, 0] },
