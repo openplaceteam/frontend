@@ -1813,6 +1813,11 @@ class Qn {
         new Error(Ot(), { cause: s }))
       );
     }
+    if (n.status === 403 && n.headers.get("cf-mitigated") === "challenge") {
+      location.href = "/challenge?" + new URLSearchParams([
+        ["r", location.pathname + location.search]
+      ]).toString();
+    }
     if (n.status === 429) throw new Error(ne());
     if (n.status === 503 || n.status === 408) throw new Error(ne());
     return n;
